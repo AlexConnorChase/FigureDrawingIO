@@ -7,32 +7,77 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #a1679f;
+  width: 100%;
+  height: 100px;
   font-size: calc(10px + 2vmin);
   color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.App-body {
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+  padding-top: 125px;
+  background: #70496f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-description {
+  width: 100%;
+  height: 100%;
+}
+
+.Search-bar {
+  width: 100%;
+  height: 50px;
+}
+
+.Image-Display-Back {
+  width: 410px;
+  height: 510px;
+  background: white;
+}
+
+.Image-display {
+  width: 400px;
+  height: 500px;
+}
+
+.Content-table {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.SB-span {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+}
+
+.SB-tf {
+  width: 80%;
+  height: 100%;
+}
+
+#Prompt-button {
+  width: 20%;
+  height: 100%;
+}
+
+main > table > tbody > tr {
+  display: flex;
+  justify-content: center;
 }
