@@ -51,6 +51,9 @@ function AppTable() {
     if (resList) {
       console.log(resList);
     }
+  };
+
+  const SearchBlog = () => {
     if (blogSearch) {
       setBlogName(blogSearch);
     }
@@ -65,11 +68,11 @@ function AppTable() {
               <p id="App-description">
                 This app uses the tumblr API to find images for timed sketching
                 practices. Insert a single tag and we'll grab the most recent
-                post with that tag. As a note we will not be adding further
-                functionality as the tumblr API lacks the appropriate
-                functionality to flesh out the desired capacity of our app and a
-                more advanced approach would be needed. Nonetheless enjoy this
-                small project as we make our way on this journey.
+                post with that tag. Using the second search bar you can input
+                the name of a blog and if the owner has enabled it you can
+                scroll through there! Feel free to keep an eye out as I have
+                some other improvements planned like pulling multiple images and
+                tracking post-timestamps to pull older post images.
               </p>
             </div>
           </td>
@@ -79,18 +82,14 @@ function AppTable() {
             <div className="Search-bar">
               <span className="SB-span">
                 <input
-                  id="search-input"
+                  className="search-input"
                   type="text"
                   placeholder="Search Tags"
                   onInput={(e) => setInputTag(e.currentTarget.value)}
                 />
-                <input
-                  id="search-blog"
-                  type="text"
-                  placeholder="Search Blog Feeds"
-                  onInput={(e) => setBlogSearch(e.currentTarget.value)}
-                />
-                <button onClick={FetchAPI}>Search</button>
+                <button className="search-button" onClick={FetchAPI}>
+                  Search Tag
+                </button>
               </span>
             </div>
           </td>
@@ -101,6 +100,23 @@ function AppTable() {
               <div className="Image-display">
                 <Post imgLink={resList} />
               </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div className="Search-bar">
+              <span className="SB-span">
+                <input
+                  className="search-input"
+                  type="text"
+                  placeholder="Search Blog Feeds"
+                  onInput={(e) => setBlogSearch(e.currentTarget.value)}
+                />
+                <button className="search-button" onClick={SearchBlog}>
+                  Search Blogs
+                </button>
+              </span>
             </div>
           </td>
         </tr>
@@ -153,6 +169,8 @@ function BlogFeed({ blogN }) {
         src={link}
       ></iframe>
     );
+  } else {
+    <p>Blog name not entered.</p>;
   }
 }
 

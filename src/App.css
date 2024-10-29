@@ -41,13 +41,22 @@
 
 #App-description {
   width: 75%;
-  height: 100%;
+  font-size: 16pt;
   margin: auto;
+  color: white;
+}
+
+td {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Search-bar {
   width: 100%;
   height: 50px;
+  padding-top: 75px;
 }
 
 .Image-Display-Back {
@@ -79,14 +88,17 @@
 }
 
 .SB-span {
-  background-color: whitesmoke;
   width: 100%;
   height: 100%;
 }
 
-.SB-tf {
-  width: 80%;
-  height: 100%;
+.search-input {
+  height: 30px;
+  font-size: 18pt;
+}
+.search-button {
+  height: 36px;
+  font-size: 18pt;
 }
 
 #Prompt-button {
@@ -106,25 +118,24 @@ main > table > tbody > tr {
 
 #Blog-feed-space {
   max-width: 1200px;
-  max-height: 600px;
   min-width: 600px;
-  min-height: 400px;
+  width: 100%;
+  height: 750px;
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #Feed-holder {
-  min-width: 590px;
-  min-height: 390px;
-  max-width: 1190px;
-  max-height: 590px;
+  width: 95%;
+  height: 95%;
   display: flex;
   align-items: center;
 }
 
 #manual-scroll {
-  min-width: 590px;
-  min-height: 390px;
-  max-width: 1190px;
-  max-height: 590px;
+  width: 100%;
+  height: 100%;
   margin: auto;
 }
