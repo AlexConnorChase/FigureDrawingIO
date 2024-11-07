@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/FigureDrawingIO/static/css/main.930d3830.css",
-    "main.js": "/FigureDrawingIO/static/js/main.afe3f05a.js",
+    "main.css": "/FigureDrawingIO/static/css/main.b2b62c10.css",
+    "main.js": "/FigureDrawingIO/static/js/main.aaa48035.js",
     "static/media/camera.jpg": "/FigureDrawingIO/static/media/camera.4f35f2fc5188685d674a.jpg",
     "index.html": "/FigureDrawingIO/index.html",
-    "main.930d3830.css.map": "/FigureDrawingIO/static/css/main.930d3830.css.map",
-    "main.afe3f05a.js.map": "/FigureDrawingIO/static/js/main.afe3f05a.js.map"
+    "main.b2b62c10.css.map": "/FigureDrawingIO/static/css/main.b2b62c10.css.map",
+    "main.aaa48035.js.map": "/FigureDrawingIO/static/js/main.aaa48035.js.map"
   },
   "entrypoints": [
-    "static/css/main.930d3830.css",
-    "static/js/main.afe3f05a.js"
+    "static/css/main.b2b62c10.css",
+    "static/js/main.aaa48035.js"
   ]
 }
