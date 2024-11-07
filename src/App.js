@@ -122,7 +122,7 @@ function AppTable() {
         </tr>
         <tr>
           <td>
-            <div id="Blog-feed-space">
+            <div id="Blog-feed-back">
               <div id="Feed-holder">
                 <BlogFeed blogN={blogName} />
               </div>
